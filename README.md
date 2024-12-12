@@ -3,7 +3,7 @@
 
 ### 📘 Descrição
 
-Este é um projeto de back-end para praticar > (Create, Read, Update, Delete) desenvolvida com [Node.js](https://nodejs.org/), [Express](https://expressjs.com/), [Sequelize](https://www.sequelize.org/), [Sequelize](https://www.mysql.com/).
+Este é um projeto de back-end para praticar > (Create, Read, Update, Delete) desenvolvida com [Node.js](https://nodejs.org/), [Express](https://expressjs.com/), [Sequelize](https://www.sequelize.org/), [MySQL](https://www.mysql.com/).
 
 ## 🚀 Funcionalidades
 
