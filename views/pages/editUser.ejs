@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Editar Usuario</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Voltar a Home</a>
+    </nav>
+<div class="container">
+    <form action="/edit/add" method="POST" class="form-cadastro">
+        <div>
+            <input type="hidden" name="id" value="<%= users.id %>">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" value="<%= users.nome %>" id="nome">
+        </div>
+        <div>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" value="<%= users.sobrenome %>" id="sobrenome">
+        </div>
+        <div>
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" value="<%= users.idade %>" id="sobrenome">
+        </div>    
+        <input type="submit" value="Editar">
+        
+    </form>
+</div>
+    
+</body>
+</html>

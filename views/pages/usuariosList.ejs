@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Lista de Usuarios</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Voltar a Home</a>
+    </nav>
+    
+    <div class="container">
+        <% for(valor of user){ %>
+            <div class="list-user">
+                <div class="dados-user">
+                    <h1>Nome:</h1>
+                    <h2><%= valor.nome %></h2>
+                </div>
+                <div class="dados-user">
+                    <h1>Sobrenome:</h1>
+                    <h2><%= valor.sobrenome %></h2>
+                </div>
+                <div class="dados-user">
+                    <h1>Idade:</h1>
+                    <h2><%= valor.idade %></h2>
+                </div>
+                <div class="links">
+                    <div class="box-links">
+                        <a href='/edit/<%= valor.id %>' class="editar">Editar</a>
+                    <form action="/edit/delete/<%= valor.id %>" method="POST" class="deletar">
+                        <input type="submit" value="Deletar">
+                    </form>
+                    </div>
+                    
+                </div>
+            
+            
+        </div>
+        <%}%>
+    </div>
+        
+    
+    
+
+</body>
+</html>
